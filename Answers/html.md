@@ -29,7 +29,26 @@
   -  data-* attributes allow us to store extra information on standard, semantic HTML elements without other hacks such as classList, non-standard attributes, extra properties on DOM, or setUserData.
   -  src - https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Using_data_attributes
 * Consider HTML5 as an open web platform. What are the building blocks of HTML5?
+  - Semantics: allowing you to describe more precisely what your content is.
+  - Connectivity: allowing you to communicate with the server in new and innovative ways.
+  - Offline & Storage: allowing webpages to store data on the client-side locally and operate offline more efficiently.
+  - Multimedia: making video and audio first-class citizens in the Open Web.
+  - 2D/3D Graphics & Effects: allowing a much more diverse range of presentation options.
+  - Performance & Integration: providing greater speed optimization and better usage of computer hardware.
+  - Device Access: allowing for the usage of various input and output devices.
+  - Styling: letting authors write more sophisticated themes.
+  - src - https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5
 * Describe the difference between a `cookie`, `sessionStorage` and `localStorage`.
+  - exhaustive answer, see source
+  - src - http://stackoverflow.com/questions/19867599/what-is-the-difference-between-localstorage-sessionstorage-session-and-cookie
 * Describe the difference between `<script>`, `<script async>` and `<script defer>`.
+  - `<script>` Parsing of the HTML code pauses while the script is executing. 
+  -  `<script async>` Asynchronous is the best of both worlds: HTML parsing may continue and the script will be executed as soon as it’s ready.
+  -  `<script defer>` delaying script execution until the HTML parser has finished. A positive effect of this attribute is that the DOM will be available for your script.
+  -  src - http://www.quora.com/What-is-the-difference-between-DEFER-and-ASYNC-attributes-on-a-resource-in-html
 * Why is it generally a good idea to position CSS `<link>`s between `<head></head>` and JS `<script>`s just before `</body>`? Do you know any exceptions?
+  - 'Move CSS to head' seeks to reduce the number of times the browser must re-flow the document by ensuring that the CSS styles are all parsed in the head, before any body elements are introduced.
+  - 'Move CSS Above Scripts' seeks to make sure scripts do not block the loading of CSS resources.
+  - 
+  - src - https://developers.google.com/speed/pagespeed/module/filter-css-to-head
 * What is progressive rendering?
