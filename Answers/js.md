@@ -1,6 +1,8 @@
 #### JS Questions:
 
 * Explain event delegation
+ - Event delegation allows us to attach a single event listener, to a parent element, that will fire for all descendants matching a selector, whether those descendants exist now or are added in the future.
+ - src - https://learn.jquery.com/events/event-delegation/
 * Explain how `this` works in JavaScript
 * Explain how prototypal inheritance works
 * How do you go about testing your JavaScript?
