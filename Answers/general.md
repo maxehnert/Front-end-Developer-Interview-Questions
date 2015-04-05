@@ -13,6 +13,17 @@
   - **Progressive enhancement** Starting with a baseline of usable functionality, then increasing the richness of the user experience step by step by testing for support for enhancements before applying them. 
   - src- http://www.w3.org/wiki/Graceful_degradation_versus_progressive_enhancement
 * How would you optimize a website's assets/resources?
+  - Eliminate unnecessary image resources
+  - Leverage CSS3 effects where possible
+  - Use web fonts instead of encoding text in images
+  - Vector images are ideal for images that consist of geometric shapes
+  - Vector images are zoom and resolution-independent
+  - SVG files should be minified to reduce their size
+  - SVG files should be compressed with GZIP
+  - Pay close attention to large assets as they result in high overhead
+  - Reduce the number of unnecessary pixels by scaling your images to their display size
+  - GZIP performs best on text-based assets: CSS, JavaScript, HTML
+  - src - https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/?hl=en
 * How many resources will a browser download from a given domain at a time?
   * What are the exceptions?
 * Name 3 ways to decrease page load (perceived or actual load time).
