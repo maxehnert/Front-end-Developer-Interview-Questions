@@ -49,6 +49,5 @@
 * Why is it generally a good idea to position CSS `<link>`s between `<head></head>` and JS `<script>`s just before `</body>`? Do you know any exceptions?
   - 'Move CSS to head' seeks to reduce the number of times the browser must re-flow the document by ensuring that the CSS styles are all parsed in the head, before any body elements are introduced.
   - 'Move CSS Above Scripts' seeks to make sure scripts do not block the loading of CSS resources.
-  - 
   - src - https://developers.google.com/speed/pagespeed/module/filter-css-to-head
 * What is progressive rendering?
