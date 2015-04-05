@@ -1,6 +1,8 @@
 #### HTML Questions:
 
 * What does a `doctype` do?
+  - `<!DOCTYPE>` informs the browser which version of HTML is being used. Doctype is a declaration, not a tag.
+  - src - https://developer.mozilla.org/en-US/docs/Glossary/Doctype
 * What's the difference between standards mode and quirks mode?
 * What's the difference between HTML and XHTML?
 * Are there any problems with serving pages as `application/xhtml+xml`?
