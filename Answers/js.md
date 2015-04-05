@@ -11,7 +11,12 @@
  - When a function is used as an event handler, its `this` is set to the element the event fired from
  - src - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this
 * Explain how prototypal inheritance works
+ - In JavaScript, any function can be added to an object in the form of a property. An inherited function acts just as any other property
+ - When an inherited function is executed, the value of this points to the inheriting object, not to the prototype object where the function is an own property.
+ - src - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain
 * How do you go about testing your JavaScript?
+ - unit tests
+ - end to end tests
 * What do you think of AMD vs CommonJS?
 * Explain why the following doesn't work as an IIFE: `function foo(){ }();`.
   * What needs to be changed to properly make it an IIFE?
