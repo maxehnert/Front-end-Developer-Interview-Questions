@@ -37,12 +37,29 @@
   
   * What are the exceptions?
     - Loading pages with many AJAX requests in batches. 
+  * src - http://sgdev-blog.blogspot.com/2014/01/maximum-concurrent-connection-to-same.html
 * Name 3 ways to decrease page load (perceived or actual load time).
+  - Optimize Images
+  - Minify Code
+  - Avoid @import for CSS
+  - Reduce HTTP Requests by combining files
+  - Utilize Browser Caching
+  - src - http://blog.teamtreehouse.com/speeding-up-page-load-times
 * If you jumped on a project and they used tabs and you used spaces, what would you do?
+  - Change my formatting to match the project format guidelines.
 * Describe how you would create a simple slideshow page.
 * What tools do you use to test your code's performance?
 * If you could master one technology this year, what would it be?
 * Explain the importance of standards and standards bodies.
 * What is Flash of Unstyled Content? How do you avoid FOUC?
+  - an instance where a web page appears briefly with the browser's default styles prior to loading an external CSS stylesheet, due to the web browser engine rendering the page before all information is retrieved.
+  - no-js hook
+  - src - http://www.paulirish.com/2009/avoiding-the-fouc-v3/
 * Explain what ARIA and screenreaders are, and how to make a website accessible.
+  - Accessible Rich Internet Applications (ARIA) defines ways to make Web content and Web applications more accessible to people with disabilities.
+  - assigning 'roles' in HTML elements
+  - src - https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA
 * Explain some of the pros and cons for CSS animations versus JavaScript animations.
+  - Use CSS animations for simpler “one-shot” transitions, like toggling UI element states.
+  - Use JavaScript animations when you want to have advanced effects like bouncing, stop, pause, rewind or slow-down.
+  - src - https://developers.google.com/web/fundamentals/look-and-feel/animations/css-vs-javascript?hl=en
