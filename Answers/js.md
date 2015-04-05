@@ -21,8 +21,14 @@
 * Explain why the following doesn't work as an IIFE: `function foo(){ }();`.
   * What needs to be changed to properly make it an IIFE?
 * What's the difference between a variable that is: `null`, `undefined` or `undeclared`?
+ - `undefined` means a variable has been declared but has not yet been assigned a value
+ - `null` is an assignment value. It can be assigned to a variable as a representation of no value
+ - A variable is `undeclared` when it does not use the var keyword
   * How would you go about checking for any of these states?
 * What is a closure, and how/why would you use one?
+ - Closures are functions that refer to independent (free) variables. In other words, the function defined in the closure remembers the environment in which it was created.
+ - Much of the code we write in web JavaScript is event-based — we define some behavior, then attach it to an event that is triggered by the user (such as a click or a keypress). Our code is generally attached as a callback: a single function which is executed in response to the event
+ - src - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures
 * What's a typical use case for anonymous functions?
 * How do you organize your code? (module pattern, classical inheritance?)
 * What's the difference between host objects and native objects?
