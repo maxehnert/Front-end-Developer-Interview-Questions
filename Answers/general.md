@@ -9,6 +9,9 @@
 * Can you describe your workflow when you create a web page?
 * If you have 5 different stylesheets, how would you best integrate them into the site?
 * Can you describe the difference between progressive enhancement and graceful degradation?
+  - **Graceful degradation** Providing an alternative version of your functionality or making the user aware of shortcomings of a product as a safety measure to ensure that the product is usable. 
+  - **Progressive enhancement** Starting with a baseline of usable functionality, then increasing the richness of the user experience step by step by testing for support for enhancements before applying them. 
+  - src- http://www.w3.org/wiki/Graceful_degradation_versus_progressive_enhancement
 * How would you optimize a website's assets/resources?
 * How many resources will a browser download from a given domain at a time?
   * What are the exceptions?
