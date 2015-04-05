@@ -25,7 +25,18 @@
   - GZIP performs best on text-based assets: CSS, JavaScript, HTML
   - src - https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/?hl=en
 * How many resources will a browser download from a given domain at a time?
+
+  | Browser | Parallel Connections |
+  | ------- | --------------------- |
+  | IE 10 | 8 |
+  | Chrome 23 | 6 |
+  | Firefox 17 | 6 |
+  | Safari 4 | 4 |
+  
+  - Reason for limiting the number is so that the server will not be overloaded by small amount of browsers and end up classifying user as DDOS attacker.
+  
   * What are the exceptions?
+    - Loading pages with many AJAX requests in batches. 
 * Name 3 ways to decrease page load (perceived or actual load time).
 * If you jumped on a project and they used tabs and you used spaces, what would you do?
 * Describe how you would create a simple slideshow page.
