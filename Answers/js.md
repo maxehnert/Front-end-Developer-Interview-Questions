@@ -4,6 +4,12 @@
  - Event delegation allows us to attach a single event listener, to a parent element, that will fire for all descendants matching a selector, whether those descendants exist now or are added in the future.
  - src - https://learn.jquery.com/events/event-delegation/
 * Explain how `this` works in JavaScript
+ - In the global execution context (outside of any function), `this` refers to the global object, whether in strict mode or not.
+ - Inside a function, the value of `this` depends on how the function is called.
+ - When a function is called as a method of an object, its `this` is set to the object the method is called on.
+ - When a function is used as a constructor (with the new keyword), its `this is bound to new object being constructed.
+ - When a function is used as an event handler, its `this` is set to the element the event fired from
+ - src - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this
 * Explain how prototypal inheritance works
 * How do you go about testing your JavaScript?
 * What do you think of AMD vs CommonJS?
