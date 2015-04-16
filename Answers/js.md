@@ -57,11 +57,28 @@
  - Binds the `this` value from the function it's being called from
  - src - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/bind
 * When would you use `document.write()`?
+ - enter new content into the document *after* it has already loaded
+ - src - https://developer.mozilla.org/en-US/docs/Web/API/Document/write
 * What's the difference between feature detection, feature inference, and using the UA string?
+ - Feature detection checks for an existing feature
+ - Feature inference also checks for an existing feature but uses another function because assumes it exists
+ - User Agent string is an outdated method that is not standard practice to use
+ - src - https://developer.mozilla.org/en-US/docs/Browser_detection_using_the_user_agent
+ - src - http://learn.jquery.com/code-organization/feature-browser-detection/
 * Explain AJAX in as much detail as possible.
+ - Asynchronous JavaScript and XML
+ - It is the use of the XMLHttpRequest object to communicate with server-side scripts. 
+ - It can send as well as receive information in a variety of formats, including JSON, XML, HTML, and even text files. 
+ - AJAX’s most appealing characteristic, however, is its "asynchronous" nature, which means it can do all of this without having to refresh the page. This lets you update portions of a page based upon user events.
+ - src - https://developer.mozilla.org/en-US/docs/AJAX/Getting_Started
 * Explain how JSONP works (and how it's not really AJAX).
+ - JSON-P works by making a <script> element (either in HTML markup or inserted into the DOM via JavaScript), which requests to a remote data service location. 
+ - The response (the loaded "JavaScript" content) is the name of a function pre-defined on the requesting web page, with the parameter being passed to it being the JSON data being requested. 
+ - When the script executes, the function is called and passed the JSON data, allowing the requesting page to receive and process the data.
+ - src - http://json-p.org/
 * Have you ever used JavaScript templating?
   * If so, what libraries have you used?
+   - handlebars and mustache
 * Explain "hoisting".
 * Describe event bubbling.
 * What's the difference between an "attribute" and a "property"?
