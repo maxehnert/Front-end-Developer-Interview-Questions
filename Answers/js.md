@@ -31,7 +31,7 @@
  - src - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures
 * What's a typical use case for anonymous functions?
  - Function expressions are convenient when passing a function as an argument to another function.
- - 
+ - need more
  - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions
 * How do you organize your code? (module pattern, classical inheritance?)
  - good reference of prototypal and classical inheritance structures
