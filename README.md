@@ -1,7 +1,7 @@
 ###Front-end Questions Including Answers
 
 This is my personal fork of the repo which I can work through the questions and provide answers with sources for my personal reference. I will be making changes from github instead of committing pushing locally.
-#####Feel free to fork this copy to save yourself some leg work on finding answers although it's pretty obvious the answers aren't provided in the original so you _have_ to find them yourself.
+#####Feel free to clone this copy to save yourself some leg work on finding answers although it's pretty obvious the answers aren't provided in the original so you _have_ to find them yourself.
 
 -----------------
 This file contains a number of front-end interview questions that can be used when vetting potential candidates. It is by no means recommended to use every single question here on the same candidate (that would take hours). Choosing a few items from this list should help you vet the intended skills you require.
