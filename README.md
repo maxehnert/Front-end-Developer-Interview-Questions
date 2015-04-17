@@ -1,4 +1,4 @@
-###Front-end Questions Including Answers
+###Front-end Questions Including [Answers](https://github.com/maxehnert/Front-end-Developer-Interview-Questions/tree/master/Answers)
 
 This is my personal fork of the repo which I can work through the questions and provide answers with sources for my personal reference. I will be making changes from github instead of committing pushing locally.
 #####Feel free to clone this copy to save yourself some leg work on finding answers although it's pretty obvious the answers aren't provided in the original so you _have_ to find them yourself.
