@@ -5,7 +5,7 @@
  - AJAX’s most appealing characteristic, however, is its "asynchronous" nature, which means it can do all of this without having to refresh the page. This lets you update portions of a page based upon user events.
  - src - https://developer.mozilla.org/en-US/docs/AJAX/Getting_Started
 * Explain how JSONP works (and how it's not really AJAX).
- - JSON-P works by making a <script> element (either in HTML markup or inserted into the DOM via JavaScript), which requests to a remote data service location. 
+ - JSON-P works by making a `<script>` element (either in HTML markup or inserted into the DOM via JavaScript), which requests to a remote data service location. 
  - The response (the loaded "JavaScript" content) is the name of a function pre-defined on the requesting web page, with the parameter being passed to it being the JSON data being requested. 
  - When the script executes, the function is called and passed the JSON data, allowing the requesting page to receive and process the data.
  - src - http://json-p.org/
