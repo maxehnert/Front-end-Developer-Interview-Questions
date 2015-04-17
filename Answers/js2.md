@@ -23,19 +23,47 @@
  - `bubble up, trickle down`
  - src w/great example and more info: http://stackoverflow.com/questions/4616694/what-is-event-bubbling-and-capturing
 * What's the difference between an "attribute" and a "property"?
- 
+ - HTML representation of a DOM element has attributes.
+ - When represented as a JavaScript object those attributes appear as object *properties.*
+ - http://stackoverflow.com/questions/258469/what-is-the-difference-between-attribute-and-property
 * Why is extending built in JavaScript objects not a good idea?
+ - native prototypes should never be extended unless it is for the sake of compatibility with newer JavaScript features
+ - Extending the prototype can cause other code to break that was using that prototype.
+ - It is often ot obvious that the changes will cause code to break later and that is why it should be avoided. 
+ - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain
 * Difference between document load event and document ready event?
+ - `$( document ).ready()` will only run once the page Document Object Model (DOM) is ready for JavaScript code to execute. 
+ - Code included inside `$( window ).load(function() { ... })` will run once the entire page, not just the DOM, is ready.
+ - http://learn.jquery.com/using-jquery-core/document-ready/
 * What is the difference between `==` and `===`?
+ - pretty close `'1' == 1`
+ - must be exact `1 === 1`
 * Explain the same-origin policy with regards to JavaScript.
+ - The same-origin policy restricts how a document or script loaded from one origin can interact with a resource from another origin. 
+ - Same-origin Policy is used as a means to prevent some of the Cross-site Request Forgery attacks.
+ * **Preventing XSS**
+  - To prevent cross-origin writes, check for an unguessable token in the request, known as a Cross-Site Request Forgery (CSRF) token. You must prevent cross-origin reads of pages that know this token.
+  - To prevent cross-origin reads of a resource, ensure that it is not embeddable. It is often necessary to prevent embedding, because embedding a resource always leaks some information about it.
+  - To prevent cross-origin embedding, ensure that your resource can not be interpreted as one of the embeddable formats listed above. The browser does not respect the Content-Type in most cases.
+ - src - https://developer.mozilla.org/en-US/docs/Web/Security/Same-origin_policy 
 * Make this work:
 ```javascript
 duplicate([1,2,3,4,5]); // [1,2,3,4,5,1,2,3,4,5]
 ```
 * Why is it called a Ternary expression, what does the word "Ternary" indicate?
+ - The conditional (ternary) operator is the only JavaScript operator that takes three operands. 
+ - This operator is frequently used as a shortcut for the if statement.
+ - `condition ? expr1 : expr2`
+ - src - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator
 * What is `"use strict";`? what are the advantages and disadvantages to using it?
+ - strict mode is a way to opt in to a restricted variant of JavaScript
+ - First, strict mode eliminates some JavaScript silent errors by changing them to throw errors. 
+ - Second, strict mode fixes mistakes that make it difficult for JavaScript engines to perform optimizations: strict mode code can sometimes be made to run faster than identical code that's not strict mode. 
+ - Third, strict mode prohibits some syntax likely to be defined in future versions of ECMAScript.
+ - src - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode
 * Create a for loop that iterates up to `100` while outputting **"fizz"** at multiples of `3`, `"buzz"` at multiples of `5` and **"fizzbuzz"** at multiples of `3` and `5`
 * Why is it, in general, a good idea to leave the global scope of a website as-is and never touch it?
+ - 'polluting' the global scope can cause code to break much like extending built in javascript objects. 
 * Why would you use something like the `load` event? Does this event have disadvantages? Do you know any alternatives, and why would you use those?
 * Explain what a single page app is and how to make one SEO-friendly.
 * What is the extent of your experience with Promises and/or their polyfills?
