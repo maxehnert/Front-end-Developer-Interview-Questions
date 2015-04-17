@@ -13,8 +13,17 @@
   * If so, what libraries have you used?
    - handlebars and mustache
 * Explain "hoisting".
-* Describe event bubbling.
+ - Because variables are read before js is executed, a variable can be called after it is used. This process is called "hoisting"
+ - src - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var
+* Describe event bubbling and event capturing.
+ - when an event occurs in an element inside another element, and both elements have registered a handle for that event. The event propagation mode determines in which order the elements receive the event.
+ - With bubbling, the event is first captured and handled by the innermost element and then propagated to outer elements.
+ - With capturing, the event is first captured by the outermost element and propagated to the inner elements.
+ - Capturing is also called "trickling", which helps remember the propagation order:
+ - `bubble up, trickle down`
+ - src w/great example and more info: http://stackoverflow.com/questions/4616694/what-is-event-bubbling-and-capturing
 * What's the difference between an "attribute" and a "property"?
+ 
 * Why is extending built in JavaScript objects not a good idea?
 * Difference between document load event and document ready event?
 * What is the difference between `==` and `===`?
