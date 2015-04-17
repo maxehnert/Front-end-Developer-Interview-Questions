@@ -65,5 +65,7 @@
  - User Agent string is an outdated method that is not standard practice to use
  - src - https://developer.mozilla.org/en-US/docs/Browser_detection_using_the_user_agent
  - src - http://learn.jquery.com/code-organization/feature-browser-detection/
- - 
+ 
+
  **Continued in js2.md**
+-
