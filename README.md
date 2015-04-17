@@ -10,7 +10,8 @@ General list of common sources I pull from
 - http://eloquentjavascript.net
 - https://docs.angularjs.org/api
 - https://api.jquery.com
-- https://google.com
+- *https://google.com*
+
 -----------------
 This file contains a number of front-end interview questions that can be used when vetting potential candidates. It is by no means recommended to use every single question here on the same candidate (that would take hours). Choosing a few items from this list should help you vet the intended skills you require.
 
