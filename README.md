@@ -12,7 +12,7 @@ General list of common sources I pull from
 - https://api.jquery.com
 - *https://google.com*
 
-*TODO: *
+**TODO:**
   * Add Angular questions and answers
   * Add version control q & a
   * Needs more HTML5 
