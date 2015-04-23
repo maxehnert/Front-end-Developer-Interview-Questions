@@ -47,9 +47,7 @@
   - To prevent cross-origin embedding, ensure that your resource can not be interpreted as one of the embeddable formats listed above. The browser does not respect the Content-Type in most cases.
  - src - https://developer.mozilla.org/en-US/docs/Web/Security/Same-origin_policy 
 * Make this work:
-```javascript
-duplicate([1,2,3,4,5]); // [1,2,3,4,5,1,2,3,4,5]
-```
+`duplicate([1,2,3,4,5]); // [1,2,3,4,5,1,2,3,4,5]`
  - This is mostly correct
  - `var a = [1,2,3,4,5];`
  - `Array(3).join(a + ',');`
@@ -67,6 +65,15 @@ duplicate([1,2,3,4,5]); // [1,2,3,4,5,1,2,3,4,5]
  - Third, strict mode prohibits some syntax likely to be defined in future versions of ECMAScript.
  - src - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode
 * Create a for loop that iterates up to `100` while outputting **"fizz"** at multiples of `3`, `"buzz"` at multiples of `5` and **"fizzbuzz"** at multiples of `3` and `5`
+ ```javascript
+ for( var i = 1; i <= 100; i++){
+  if(i % 15 == 0){ console.log('fizzbuzz') }
+  else if(i % 3 == 0){ console.log('fizz') }
+  else if(i % 5 == 0){ console.log('buzz') }
+  else console.log(i);
+}
+```
+
 * Why is it, in general, a good idea to leave the global scope of a website as-is and never touch it?
  - 'polluting' the global scope can cause code to break much like extending built in javascript objects. 
 * Why would you use something like the `load` event? Does this event have disadvantages? Do you know any alternatives, and why would you use those?
