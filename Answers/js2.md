@@ -50,6 +50,10 @@
 ```javascript
 duplicate([1,2,3,4,5]); // [1,2,3,4,5,1,2,3,4,5]
 ```
+ - This is mostly correct
+ - `var a = [1,2,3,4,5];`
+ - `Array(3).join(a + ',');`
+ - `// "1,2,3,4,5,1,2,3,4,5,"`
 * Why is it called a Ternary expression, what does the word "Ternary" indicate?
  - The conditional (ternary) operator is the only JavaScript operator that takes three operands. 
  - This operator is frequently used as a shortcut for the if statement.
