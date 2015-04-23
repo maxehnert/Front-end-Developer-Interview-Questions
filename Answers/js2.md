@@ -3,18 +3,18 @@
  - It is the use of the XMLHttpRequest object to communicate with server-side scripts. 
  - It can send as well as receive information in a variety of formats, including JSON, XML, HTML, and even text files. 
  - AJAX’s most appealing characteristic, however, is its "asynchronous" nature, which means it can do all of this without having to refresh the page. This lets you update portions of a page based upon user events.
- - src - https://developer.mozilla.org/en-US/docs/AJAX/Getting_Started
+ - src -https://developer.mozilla.org/en-US/docs/AJAX/Getting_Started
 * Explain how JSONP works (and how it's not really AJAX).
  - JSON-P works by making a `<script>` element (either in HTML markup or inserted into the DOM via JavaScript), which requests to a remote data service location. 
  - The response (the loaded "JavaScript" content) is the name of a function pre-defined on the requesting web page, with the parameter being passed to it being the JSON data being requested. 
  - When the script executes, the function is called and passed the JSON data, allowing the requesting page to receive and process the data.
- - src - http://json-p.org/
+ - src-http://json-p.org/
 * Have you ever used JavaScript templating?
   * If so, what libraries have you used?
    - handlebars and mustache
 * Explain "hoisting".
  - Because variables are read before js is executed, a variable can be called after it is used. This process is called "hoisting"
- - src - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var
+ - src-https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var
 * Describe event bubbling and event capturing.
  - when an event occurs in an element inside another element, and both elements have registered a handle for that event. The event propagation mode determines in which order the elements receive the event.
  - With bubbling, the event is first captured and handled by the innermost element and then propagated to outer elements.
@@ -54,6 +54,7 @@ duplicate([1,2,3,4,5]); // [1,2,3,4,5,1,2,3,4,5]
  - `var a = [1,2,3,4,5];`
  - `Array(3).join(a + ',');`
  - `// "1,2,3,4,5,1,2,3,4,5,"`
+ 
 * Why is it called a Ternary expression, what does the word "Ternary" indicate?
  - The conditional (ternary) operator is the only JavaScript operator that takes three operands. 
  - This operator is frequently used as a shortcut for the if statement.
