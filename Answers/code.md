@@ -118,7 +118,7 @@ console.log(test());
   - In the first `log` the`getFullname()` call is invoked as a function of the `obj.prop` object
   - On the second `log`, `test` is set as a property of the global object. Therefore the `this` of `test` is what is set in the global scope `John Doe`
 
-*Question: write a function that accepts any number of arguements and returns their sum (similar to earlier question). It should also accept and array and sum the array.
+*Question: Write a function that accepts any number of arguements and returns their sum (similar to earlier question). It should also accept and array and sum the array.*
 * Answer
 ```javascript
 function sum() {
