@@ -67,3 +67,14 @@ foo.push(2);
 ```
 * Answer
   - 2 because `.push()` is putting 1 element inside the array each time. `.push(4)` and `.push("3")` will both result in a length of 1 individually.
+
+*Question: What will be printed in the console?*
+```javascript
+(function() {
+   var a = b = 5;
+})();
+ 
+console.log(b);
+```
+* Answer
+  - `5` because `b` is NOT assigned with `var` so it is assigned to the GLOBAL scope.
