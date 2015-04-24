@@ -4,22 +4,48 @@
 ```javascript
 var foo = 10 + '20';
 ```
+* Answer
+  - `"1020"` the `+` operator acts as a concatinator and is joining the 2 values together without logic.
 
 *Question: How would you make this work?*
 ```javascript
 add(2, 5); // 7
 add(2)(5); // 7
 ```
+* Answer
+```javascript 
+function add (valueA, valueB) {
+var sum = valueA + valueB;
+return sum;
+}
+add(2, 5); // 7
+```
 
 *Question: What value is returned from the following statement?*
 ```javascript
 "i'm a lasagna hog".split("").reverse().join("");
+```
+* Answer
+`"goh angasal a m'i"`
+  - Lets break it down further though
+```javascript
+"i'm a lasagna hog".split("");
+// ["i", "'", "m", " ", "a", " ", "l", "a", "s", "a", "g", "n", "a", " ", "h", "o", "g"]
+
+"i'm a lasagna hog".split("").reverse();
+// ["g", "o", "h", " ", "a", "n", "g", "a", "s", "a", "l", " ", "a", " ", "m", "'", "i"]
+
+"i'm a lasagna hog".split("").reverse().join("");
+// "goh angasal a m'i"
 ```
 
 *Question: What is the value of `window.foo`?*
 ```javascript
 ( window.foo || ( window.foo = "bar" ) );
 ```
+* Answer
+  - `// "bar"`
+  - invalid left side, not setting `window.foo` to anything so it goes on to the other side which is a valid expression
 
 *Question: What is the outcome of the two alerts below?*
 ```javascript
