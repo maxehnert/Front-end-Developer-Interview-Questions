@@ -29,6 +29,7 @@
  - Closures are functions that refer to independent (free) variables. In other words, the function defined in the closure remembers the environment in which it was created.
  - Much of the code we write in web JavaScript is event-based — we define some behavior, then attach it to an event that is triggered by the user (such as a click or a keypress). Our code is generally attached as a callback: a single function which is executed in response to the event
  - src - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures
+ - src - http://stackoverflow.com/questions/111102/how-do-javascript-closures-work
 * What's a typical use case for anonymous functions?
  - Function expressions are convenient when passing a function as an argument to another function.
  - need more
@@ -47,8 +48,8 @@
  - `var person = Person()` - assigning variable `person` to the callback method `Person()`
  - `var person = new Person()` - ???
 * What's the difference between `.call` and `.apply`?
- - `apply()` method calls a function with a given this value and arguments provided as an **array**
- - `call()` method calls a function with a given this value and arguments provided individually
+ - `apply()` method calls a function with a given `this` value and arguments provided as an **array**
+ - `call()` method calls a function with a given `this` value and arguments provided individually
  - The fundamental difference is that call() accepts an argument list, while apply() accepts a single array of arguments.
  - src - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/call
 * Explain `Function.prototype.bind`.
