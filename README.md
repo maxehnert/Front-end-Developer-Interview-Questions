@@ -16,6 +16,7 @@ General list of common sources I pull from
 **TODO:**
   * Add Angular questions and answers
   * Add version control q & a
+  * Add bash commands q & a
   * Needs more HTML5 
   * Migrate Answers into separate repo
   
