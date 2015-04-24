@@ -92,3 +92,28 @@ String.prototype.repeatify = String.prototype.repeatify || function(times){
 };
 console.log('hello'.repeatify(3));
 ```
+*Question: What is the result of the following code?*
+```javascript
+var fullname = 'John Doe';
+var obj = {
+   fullname: 'Colin Ihrig',
+   prop: {
+      fullname: 'Aurelio De Rosa',
+      getFullname: function() {
+         return this.fullname;
+      }
+   }
+};
+ 
+console.log(obj.prop.getFullname());
+ 
+var test = obj.prop.getFullname;
+ 
+console.log(test());
+```
+* Answer
+  - `console.log(obj.prop.getFullname());` prints `Aurelio De Rosa`
+  - `console.log(test());` prints `John Doe`
+  - The reason is because of the context of the `this` keyword
+  - In the first `log` the`getFullname()` call is invoked as a function of the `obj.prop` object
+  - On the second `log`, `test` is set as a property of the global object. Therefore the `this` of `test` is what is set in the global scope `John Doe`
