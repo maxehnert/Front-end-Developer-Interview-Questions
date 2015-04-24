@@ -56,6 +56,8 @@ var foo = "Hello";
 })();
 alert(foo + bar);
 ```
+* Answer
+  - Only the inside alert works because the variable `bar` is scoped within the iife. This is also a basic example of a closure, I'm pretty sure. 
 
 *Question: What is the value of `foo.length`?*
 ```javascript
@@ -63,3 +65,5 @@ var foo = [];
 foo.push(1);
 foo.push(2);
 ```
+* Answer
+  - 2 because `.push()` is putting 1 element inside the array each time. `.push(4)` and `.push("3")` will both result in a length of 1 individually.
