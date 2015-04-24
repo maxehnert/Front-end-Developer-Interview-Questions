@@ -66,7 +66,7 @@ foo.push(1);
 foo.push(2);
 ```
 * Answer
-  - 2 because `.push()` is putting 1 element inside the array each time. `.push(4)` and `.push("3")` will both result in a length of 1 individually.
+  - `[1,2]` because `.push()` is putting 1 element inside the array each time.
 
 *Question: What will be printed in the console?*
 ```javascript
