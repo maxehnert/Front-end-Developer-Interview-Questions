@@ -136,3 +136,44 @@ sum(1,2,3); //6
 var data = [1,2,3];
 sum.apply(null, data); // 6
 ```
+
+*Question: Write A Function That Capitalizes Every First Letter In A String*
+```javascript
+var str = "eCommerce rocks. crazyCamelCase stuff. _those  pigeon-toed shennanigans. Fiery trailblazing 345 thirty-two Roger. The quick brown fox jumped over the lazy dogs. Clancy Brown would have been cool as Lex Luthor. good_bye";
+str.split(' ').map( function(x){
+return x && x[0].toUpperCase()+x.slice(1);
+}).join(' ');
+```
+
+*Question: Write a function that returns true for palindrome words?*
+```javascript
+function palindrome(str) {
+    var len = str.length;
+    for ( var i = 0; i < Math.floor(len/2); i++ ) {
+        if (str[i] !== str[len - 1 - i]) {
+            return false;
+        }
+    }
+    return true;
+}
+```
+
+*Question: What is the largest prime factor of the number 600851475143?*
+```javascript
+(function primeFactor() {
+  // starting index (first prime)
+  var i = 2;
+  var num = 600851475143;
+
+  while (num > i) {
+    if (num % i === 0) {
+      num = num / i;
+    }
+
+    i++;
+  }
+
+  console.log(i);
+  return i;
+}());
+```
