@@ -158,9 +158,9 @@ function palindrome(str) {
 }
 ```
 
-*Question: What is the largest prime factor of the number 600851475143?*
+*Question: Write a function that returns the largest prime factor of a number*
 ```javascript
-(function primeFactor() {
+function primeFactor() {
   // starting index (first prime)
   var i = 2;
   var num = 600851475143;
@@ -175,5 +175,8 @@ function palindrome(str) {
 
   console.log(i);
   return i;
-}());
+};
+
+var num = 600851475143;
+primeFactor(num);
 ```
