@@ -55,7 +55,24 @@
 * Explain `Function.prototype.bind`.
  - bind() method creates a new function that, when called, has its `this` keyword set to the provided value, with a given sequence of arguments preceding any provided when the new function is called
  - `fun.bind(thisArg[, arg1[, arg2[, ...]]])`
- - Binds the `this` value from the function it's being called from
+ - Binds the `this` value from the function it's being called from.
+ - Example:
+ ```javascript
+ this.x = 9; 
+var module = {
+  x: 81,
+  getX: function() { return this.x; }
+};
+
+module.getX(); // 81
+
+var getX = module.getX;
+getX(); // 9, because in this case, "this" refers to the global object
+
+// Create a new function with 'this' bound to module
+var boundGetX = getX.bind(module);
+boundGetX(); // 81
+```
  - src - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/bind
 * When would you use `document.write()`?
  - enter new content into the document *after* it has already loaded
