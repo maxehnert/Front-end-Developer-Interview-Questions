@@ -180,3 +180,27 @@ function primeFactor() {
 var num = 600851475143;
 primeFactor(num);
 ```
+
+*Question: Determine if a number is a prime factor*
+```javascript
+function isPrime(num){
+  // start at 2 because 1 = prime and 0=undefined
+  var divisor = 2;
+  
+  while(num > divisor) {
+    // if there is no remainder then it can't be prime
+    if(num % divisor === 0) {
+      return false;
+    }
+    else {
+      divisor++;
+    }    
+  }
+  // if it can loop through the entire while loop without finding a valid remainderthen it must be a prime number
+  return true;
+}
+
+isPrime(5); // true
+isPrime(6); //false
+```
+
