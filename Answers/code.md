@@ -203,4 +203,22 @@ function isPrime(num){
 isPrime(5); // true
 isPrime(6); //false
 ```
-
+*Question: Write a function that returns all the prime factors of a number*
+```javascript
+function findPrimes(num) {
+  var primes = [];
+  var divisor = 2;
+  
+  while(num > 2) {
+    // if the number is divisible by the divisor then store it in the array
+    if(num % divisor === 0){
+      primes.push(divisor);
+    }
+    else divisor++;
+  }
+  // return an array of all the prime factors 
+  return primes;
+}
+findPrimes(12); //[2,2,3]
+findPrimes(23); //[23]
+```
