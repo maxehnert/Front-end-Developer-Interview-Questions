@@ -222,3 +222,35 @@ function findPrimes(num) {
 findPrimes(12); //[2,2,3]
 findPrimes(23); //[23]
 ```
+
+*Question: Write a function that removes all duplicate numbers and sorts the array numerically*
+```javascript
+function removeDuplicate(arr) {
+	var exists = {},
+			outArr = [],
+			elm;
+	
+	for(var i = 0; i<arr.length; i++) {
+	  // store each number here temporarily
+		elm = arr[i];
+		
+		// if the number ISN'T already there
+		if(!exists[elm]) {
+		  // put the new number into the final array
+			outArr.push(elm);
+			// mark that number so it skips it next time
+			exists[elm] = true;
+		}
+	}
+	// now use the sort method
+	outArr.sort( function(a,b) {
+	  // use a comparator or else it will return numbers lexicographically [1,11,2,245,3]
+		return a - b;
+	});
+	
+	return outArr;
+ 	
+}
+
+removeDuplicate([1,3,324,3,11,5,6,2,2,3,7,8,1]); // [1, 2, 3, 5, 6, 7, 8, 11, 324]
+```
