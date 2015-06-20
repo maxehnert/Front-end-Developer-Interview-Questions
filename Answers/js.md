@@ -83,7 +83,16 @@ boundGetX(); // 81
  - User Agent string is an outdated method that is not standard practice to use
  - src - https://developer.mozilla.org/en-US/docs/Browser_detection_using_the_user_agent
  - src - http://learn.jquery.com/code-organization/feature-browser-detection/
- 
+* What is the difference between `.substr()` and `.substring()`?
+ - `substr` (MDN) takes parameters as `(from, length)`
+ - `substring` (MDN) takes parameters as `(from, to)`
+ - ex: 
+  ```javascript
+   alert("abc".substr(1,2)); // returns "bc"
+   alert("abc".substring(1,2)); // returns "b"
+```
+ - src - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/substring
+ - src - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/substr
 
  **Continued in js2.md**
 -
