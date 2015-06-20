@@ -255,7 +255,7 @@ function removeDuplicate(arr) {
 removeDuplicate([1,3,324,3,11,5,6,2,2,3,7,8,1]); // [1, 2, 3, 5, 6, 7, 8, 11, 324]
 ```
 
-*Question: Write a function that merges 2 arrays and sorts the new array
+*Question: Write a function that merges 2 arrays and sorts the new array*
 ```javascript
 function mergeAndSortArray(a, b){
   var merged = [], 
