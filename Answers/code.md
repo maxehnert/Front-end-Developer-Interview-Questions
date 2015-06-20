@@ -254,3 +254,55 @@ function removeDuplicate(arr) {
 
 removeDuplicate([1,3,324,3,11,5,6,2,2,3,7,8,1]); // [1, 2, 3, 5, 6, 7, 8, 11, 324]
 ```
+
+*Question: Write a function that merges 2 arrays and sorts the new array
+```javascript
+function mergeAndSortArray(a, b){
+  var merged = [], 
+      aElm = a[0],
+      bElm = b[0],
+      i = 1,
+      j = 1;
+  
+  // check for empty array
+  if(a.length ==0) {
+    return b;
+  }
+
+  // check for empty array
+  if(b.length ==0) {
+    return a;
+  }
+  
+  // when either exist
+  while(aElm || bElm) {
+    
+    // if only aElm exists OR is less than bElm
+   if((aElm && !bElm) || aElm < bElm) {
+     
+     // insert aElm value into the array
+     merged.push(aElm);
+     
+     // increment the value so you don't repeat it
+     aElm = a[i++];
+   } 
+   // if bElm exists or is SMALLER than aElm  
+   else {
+     
+     // insert bElm value into the array
+     merged.push(bElm);
+     
+     // increment the value so you don't repeat it
+     bElm = b[j++];
+   }
+  }
+  // return the ne array, but first lets put the values in order
+  return merged.sort( 
+    // use a comparator to make it numerically ordered
+    function(a,b) { 
+      return a - b;
+    });
+}
+
+mergeAndSortArray([5,777,3,3,4,8,9,1], [22,3,5,7,1,67]); // [1, 1, 3, 3, 3, 4, 5, 5, 7, 8, 9, 22, 67, 777]
+```
