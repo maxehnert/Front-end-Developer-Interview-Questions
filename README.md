@@ -19,15 +19,23 @@ This file contains a number of front-end interview questions that can be used wh
 **Note:** Keep in mind that many of these questions are open-ended and could lead to interesting discussions that tell you more about the person's capabilities than a straight answer would.
 
 ## Table of Contents
-
+Note: not all [Answers](https://github.com/maxehnert/Front-end-Developer-Interview-Questions/tree/master/Answers) sections are complete.
   1. [General Questions](#general-questions)
+    - [Answers](https://github.com/maxehnert/Front-end-Developer-Interview-Questions/tree/master/Answers/general.md)
   1. [HTML Questions](#html-questions)
+    * [Answers](https://github.com/maxehnert/Front-end-Developer-Interview-Questions/tree/master/Answers/html.md)
   1. [CSS Questions](#css-questions)
+    * [Answers](https://github.com/maxehnert/Front-end-Developer-Interview-Questions/tree/master/Answers/css.md)
   1. [JS Questions](#js-questions)
+    * [Answers](https://github.com/maxehnert/Front-end-Developer-Interview-Questions/tree/master/Answers/js.md)
+    * [Answers](https://github.com/maxehnert/Front-end-Developer-Interview-Questions/tree/master/Answers/js2.md)
   1. [Performance Questions](#performance-questions)
+  1. [Testing Questions](#testing-questions)
   1. [Network Questions](#network-questions)
   1. [Coding Questions](#coding-questions)
+    * [Answers](https://github.com/maxehnert/Front-end-Developer-Interview-Questions/tree/master/Answers/code.md)
   1. [Fun Questions](#fun-questions)
+    * [Answers](https://github.com/maxehnert/Front-end-Developer-Interview-Questions/tree/master/Answers/fun.md)
 
 ## Getting Involved
 
