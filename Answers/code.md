@@ -359,4 +359,3 @@ fib(3)  fib(4) fib(4)   fib(5)
 // each time the function is called, it goes back and runs through it incrementally getting smaller and smaller each time
 // stops at 2 
 ```
-So why use this? Well it's less lines of code, and it's more efficient. According to `console.time()` it's 2.2x faster to run this recusively. 
