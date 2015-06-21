@@ -24,6 +24,7 @@ This file contains a number of front-end interview questions that can be used wh
   1. [HTML Questions](#html-questions)
   1. [CSS Questions](#css-questions)
   1. [JS Questions](#js-questions)
+  1. [Performance Questions](#performance-questions)
   1. [Network Questions](#network-questions)
   1. [Coding Questions](#coding-questions)
   1. [Fun Questions](#fun-questions)
@@ -57,6 +58,7 @@ This file contains a number of front-end interview questions that can be used wh
 * What is Flash of Unstyled Content? How do you avoid FOUC?
 * Explain what ARIA and screenreaders are, and how to make a website accessible.
 * Explain some of the pros and cons for CSS animations versus JavaScript animations.
+* What does CORS stand for and what issue does it address?
 
 #### HTML Questions:
 
@@ -150,6 +152,24 @@ duplicate([1,2,3,4,5]); // [1,2,3,4,5,1,2,3,4,5]
 * Explain what a single page app is and how to make one SEO-friendly.
 * What is the extent of your experience with Promises and/or their polyfills?
 * What are the pros and cons of using Promises instead of callbacks?
+* What are some of the advantages/disadvantages of writing JavaScript code in a language that compiles to JavaScript?
+* What tools and techniques do you use debugging JavaScript code?
+* What language constructions do you use for iterating over object properties and array items?
+* Explain the difference between mutable and immutable objects.
+  * What is an example of an immutable object in JavaScript?
+  * What are the pros and cons of immutability?
+  * How can you achieve immutability in your own code?
+
+#### Testing Questions:
+* What are some advantages/disadvantages to testing your code?
+* What tools would you use to test your code's functionality?
+* What is the difference between a unit test and a functional/integration test?
+* What is the purpose of a code style linting tool?
+
+#### Performance Questions:
+* What tools would you use to find a performance bug in your code?
+* What are some ways you may improve your website's scrolling performance?
+* Explain the difference between layout, painting and compositing.
 
 #### Network Questions:
 
