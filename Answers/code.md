@@ -306,3 +306,56 @@ function mergeAndSortArray(a, b){
 
 mergeAndSortArray([5,777,3,3,4,8,9,1], [22,3,5,7,1,67]); // [1, 1, 3, 3, 3, 4, 5, 5, 7, 8, 9, 22, 67, 777]
 ```
+
+*Question: Write a function that returns the nth fibonacci number*
+
+```javascript
+function fibSeq(num) {
+  
+  // start with the beginning sequence
+  var fib = [0,1];
+  
+  // we don't even both with the first couple numbers
+  if(num <= 2) {
+    return 1;
+  }
+  
+  // start 2 because of above and loop to the end of the number
+  for(var i = 2; i <= num; i++) {
+  
+    // the bread and butter of a fibonacci sequence
+    // it's always ((current number) - 1) + ((current number) - 2)
+    fib[i] = fib[i-1] + fib[i-2];
+  }
+  return fib[num];
+}
+fibSeq(10); // 55
+```
+
+Now do the fibonaci sequence recursively.
+```javascript
+function fibSeq(num) {
+ 
+ if(num < 2) {
+  return 1;
+ }
+ else {
+  return fibSeq(num - 1) + fibSeq(num - 2);
+ }
+}
+```
+This one was tricky and took a bit to fully comprehend, but there is a great explaination on SO about this question
+- src - http://stackoverflow.com/questions/8845154/how-does-the-the-fibonacci-recursive-function-work
+ ```shell
+ 
+        fibonacci(7)
+        ____|_____
+       |          |
+ fibonacci(5)  fibonacci(6)
+  ____|____     ____|_____
+ |        |    |         |
+fib(3)  fib(4) fib(4)   fib(5)
+
+// each time the function is called, it goes back and runs through it incrementally getting smaller and smaller each time
+// stops at 2  
+```
