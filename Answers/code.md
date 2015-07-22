@@ -359,3 +359,39 @@ fib(3)  fib(4) fib(4)   fib(5)
 // each time the function is called, it goes back and runs through it incrementally getting smaller and smaller each time
 // stops at 2 
 ```
+
+
+*Question: Write a function that shuffles and array in place.*
+```javascript
+
+//Fisher–Yates shuffle
+
+function shuffle(array) {
+  var currentIndex = array.length;
+  var temporaryValue;
+  var randomIndex;
+
+  // While there remain elements to shuffle
+  while (currentIndex) {
+
+    // Pick a remaining element at random
+    randomIndex = Math.floor( Math.random() * currentIndex-- );
+
+    // And swap it with the current element.
+    temporaryValue = array[currentIndex];
+
+    array[currentIndex] = array[randomIndex];
+
+    array[randomIndex] = temporaryValue;
+  }
+
+  return array;
+}
+
+var arr = ["a","b","c","d","e"];
+
+shuffle(arr);  // ["b", "a", "d", "c", "e"];
+
+// source http://bost.ocks.org/mike/shuffle/
+```
+
