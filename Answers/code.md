@@ -395,3 +395,45 @@ shuffle(arr);  // ["b", "a", "d", "c", "e"];
 // source http://bost.ocks.org/mike/shuffle/
 ```
 
+*Question: Write a funtion that can shuffle a deck of cards in a single riffle*
+
+```javascript
+/* For this experiment I will take an array of 52 numbers (the deck of cards) and shuffle them in a single rifle */
+
+var deck = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52];
+
+// First half of the deck
+var half1 = deck.slice(0, deck.length/2);
+
+// Second half of the deck
+var half2 = deck.slice(26, deck.length);
+
+var shuffled_arr_deck = half1.map(function (e, i) {
+    return [half1[i], half2[i]];
+});
+var shuffled_deck = shuffled_arr_deck.toString().split(',').map(Number);
+
+// shuffled_deck = [1, 27, 2, 28, 3, 29, 4, 30, 5, 31, 6, 32, 7, 33, 8, 34, 9, 35, 10, 36, 11, 37, 12, 38, 13, 39, 14, 40, 15, 41, 16, 42, 17, 43, 18, 44, 19, 45, 20, 46, 21, 47, 22, 48, 23, 49, 24, 50, 25, 51, 26, 52]
+
+/* Check if the Deck is a single rifle*/
+function is_single_riffle(half1, half2, shuffled_deck) {
+  
+  var card;
+  var half1_index = 0;
+  var half2_index = 0;
+  var half1_max_index = half1.length - 1;
+  var half2_max_index = half2.length - 1;
+  
+  for ( index in shuffled_deck ) {
+    if ( half1_index <= half1_max_index && index == half1[half1_index + 1] ) {
+      half1_index += 1;
+    } else if ( half2_index <= half2_max_index && index == half2[half2_index + 1] ) {
+      half2_index += 1;
+    } else {
+      return false;
+    }
+return true;
+  }
+}
+
+```
