@@ -6,8 +6,10 @@
 * What UI, Security, Performance, SEO, Maintainability or Technology considerations do you make while building a web application or site?
 * Talk about your preferred development environment.
 * Which version control systems are you familiar with?
+  - git
 * Can you describe your workflow when you create a web page?
 * If you have 5 different stylesheets, how would you best integrate them into the site?
+  - I typically use Gulp so piping all the css files into a single minified file is quite simple and easy to implement. 
 * Can you describe the difference between progressive enhancement and graceful degradation?
   - **Graceful degradation** Providing an alternative version of your functionality or making the user aware of shortcomings of a product as a safety measure to ensure that the product is usable. 
   - **Progressive enhancement** Starting with a baseline of usable functionality, then increasing the richness of the user experience step by step by testing for support for enhancements before applying them. 
@@ -49,7 +51,10 @@
   - Change my formatting to match the project format guidelines.
 * Describe how you would create a simple slideshow page.
 * What tools do you use to test your code's performance?
+  - Google Page Speed Test gives a good breakdown of events.
+  - Chrome dev tools has many great ways to check your load times amongst other things.
 * If you could master one technology this year, what would it be?
+  - JavaScript. Master a technology in one year, two, even three seems unlikely however.
 * Explain the importance of standards and standards bodies.
 * What is Flash of Unstyled Content? How do you avoid FOUC?
   - an instance where a web page appears briefly with the browser's default styles prior to loading an external CSS stylesheet, due to the web browser engine rendering the page before all information is retrieved.
