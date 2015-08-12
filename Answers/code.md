@@ -158,6 +158,38 @@ function palindrome(str) {
 }
 ```
 
+*Question: Write a function that checks if a string can be a palindrome*
+```javascript
+function canBePalindrome(str)
+{
+    // set the string to lower case first
+    var str = str.toLowerCase();
+    
+    var letterCounts = {};
+    var letter;
+    var palindromeSum = 0;
+    
+    for (var i = 0; i < str.length; i++) {
+        letter = str[i];
+        letterCounts[letter] = letterCounts[letter] || 0;
+        letterCounts[letter]++;
+    }
+    
+    for (var letterCount in letterCounts) {
+        palindromeSum += letterCounts[letterCount] % 2;
+    }
+
+    return palindromeSum < 2;
+}
+
+canBePalindrome('aaa'); // true
+canBePalindrome('aa1'); // true
+canBePalindrome('aA1'); // true
+canBePalindrome('aabb'); // true
+canBePalindrome('aabbc'); // true
+canBePalindrome('abbc'); // false
+```
+
 *Question: Write a function that returns the largest prime factor of a number*
 ```javascript
 function primeFactor() {
