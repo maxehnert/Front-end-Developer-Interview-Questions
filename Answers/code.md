@@ -135,6 +135,10 @@ sum(1,2,3); //6
 // with array
 var data = [1,2,3];
 sum.apply(null, data); // 6
+
+// Using ES6
+let data = [1, 2, 3];
+sum(...data); // 6
 ```
 
 *Question: Write A Function That Capitalizes Every First Letter In A String*
