@@ -145,8 +145,13 @@ sum(...data); // 6
 ```javascript
 var str = "eCommerce rocks. crazyCamelCase stuff. _those  pigeon-toed shennanigans. Fiery trailblazing 345 thirty-two Roger. The quick brown fox jumped over the lazy dogs. Clancy Brown would have been cool as Lex Luthor. good_bye";
 str.split(' ').map( function(x){
-return x && x[0].toUpperCase()+x.slice(1);
+  return x && x[0].toUpperCase() + x.slice(1);
 }).join(' ');
+// str.split(' ') - this separates each word into its own string all within an array - note the space in the quotes
+// return x - this is returning the entire string
+// x[0].toUpperCase() - this capitalizes the first letter or each word
+// x.slice(1) - this inserts the capitalized letters back into the string
+// join(' ') - this puts everything back together like it started out
 ```
 
 *Question: Write a function that returns true for palindrome words?*
