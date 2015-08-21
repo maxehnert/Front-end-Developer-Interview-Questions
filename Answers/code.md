@@ -66,7 +66,7 @@ foo.push(1);
 foo.push(2);
 ```
 * Answer
-  - `[1,2]` because `.push()` is putting 1 element inside the array each time.
+  - `2`; `.length` counts the number of elements in the array, not the index. 
 
 *Question: What will be printed in the console?*
 ```javascript
