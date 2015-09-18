@@ -425,6 +425,34 @@ function removeDuplicate(arr) {
 
 removeDuplicate([1,3,324,3,11,5,6,2,2,3,7,8,1]); // [1, 2, 3, 5, 6, 7, 8, 11, 324]
 ```
+This version is a little shorter and faster. I repurposed a remove dup function I did for strings.
+```javascript
+function removeDupNum (arr) {
+  arr = arr.sort();
+  var tempNum;
+  var i = arr.length;
+  
+  while (i--) {
+    if(!tempNum) {
+      tempNum = arr[i];
+      continue;
+    }
+    
+    if (arr[i] === tempNum) {
+      arr.splice(i,1);
+    } else {
+      tempNum = arr[i]
+    }
+  }
+  return arr;
+  /* If you want to see it sorted ten run the next step.
+  console.log(arr.sort( function(a,b) {
+    return b-a;
+  }));
+  */
+}
+removeDupNum([1,2,3,2,66,2,4,66,4,7])  // [1, 2, 3, 4, 66, 7]
+```
 
 *Question: Write a function that merges 2 arrays and sorts the new array*
 ```javascript
