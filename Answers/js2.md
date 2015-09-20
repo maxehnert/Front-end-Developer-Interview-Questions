@@ -4,6 +4,10 @@
  - It can send as well as receive information in a variety of formats, including JSON, XML, HTML, and even text files. 
  - AJAX’s most appealing characteristic, however, is its "asynchronous" nature, which means it can do all of this without having to refresh the page. This lets you update portions of a page based upon user events.
  - src -https://developer.mozilla.org/en-US/docs/AJAX/Getting_Started
+* Explain the differences between Promises and Callbacks.
+ - A Promise is a proxy for a value not necessarily known at its creation time. 
+ - .then() accepts a function executes when the promise has been fulfilled. 
+ - Callbacks must be nested within each other and run asynchronously. 
 * Explain how JSONP works (and how it's not really AJAX).
  - JSON-P works by making a `<script>` element (either in HTML markup or inserted into the DOM via JavaScript), which requests to a remote data service location. 
  - The response (the loaded "JavaScript" content) is the name of a function pre-defined on the requesting web page, with the parameter being passed to it being the JSON data being requested. 
